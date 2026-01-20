@@ -49,8 +49,8 @@
 ## Additional information
 1. In options menu 
 - you may customize your game
-- you may change the save system
- -- json(save game to file)
- -- Entity Framework(save game to the database)
+- You may change the save system:
+  - JSON - saves games to files
+  - Entity Framework - saves games to the database
 2. In load game menu
 - you may load or delete game (Available saves depend on the selected save system)
