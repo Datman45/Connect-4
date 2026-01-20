@@ -1,0 +1,21 @@
+﻿@page
+@model WebApp.Pages.GameMode
+
+<div class="game-mode-menu text-center">
+    <div class="title">Game Mode Menu</div>
+    <div class="menu-button">
+        <a asp-page-handler="HumanVsHuman">Player vs Player</a>
+    </div>
+    <div class="menu-button">
+        <a asp-page="./AiDifficulty">Player vs Bot</a>
+    </div>
+    <div class="menu-button">
+        <a asp-page="./GameMode" asp-page-handler="AiVsAi">Bot vs Bot</a>
+    </div>
+    <div class="menu-button">
+        <a asp-page="./Index">Return</a>
+    </div>
+    <div class="menu-button">
+        <a asp-page="./Exit">Exit</a>
+    </div>
+</div>

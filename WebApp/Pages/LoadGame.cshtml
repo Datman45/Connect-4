@@ -1,0 +1,36 @@
+﻿@page
+@model WebApp.Pages.LoadGame
+
+<div class="load-game-wrapper">
+    <table class="load-game table table-bordered">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Description</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var game in Model.ListOfGames)
+        {
+            @if (game.Text.Split(".").Last() != "multiplayer")
+            {
+                <tr>
+                    <td> @game.Value </td>
+                    <td> @game.Text </td>
+                    <td>
+                        <form method="post">
+                            <input type="hidden" name="GameId" value="@game.Value" />
+                            <button class="load" asp-page-handler="Load">Load</button>
+                            <button class="delete" asp-page-handler="Delete">Delete</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        }
+        </tbody>
+    </table>
+    
+    <a class="return-button" asp-page="./Index">Return</a>
+    
+</div>

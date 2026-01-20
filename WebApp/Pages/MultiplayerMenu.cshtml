@@ -1,0 +1,18 @@
+﻿@page
+@model WebApp.Pages.MultiplayerMenu
+
+<div class="multiplayer-menu text-center">
+    <div class="title">Multiplayer Menu</div>
+    <form method="post" asp-page-handler="CreateGame">
+        <button type="submit">Create Game</button>
+    </form>
+    <div class="menu-button">
+        <a asp-page="./FindGame">Find Game</a>
+    </div>
+    <div class="menu-button">
+        <a asp-page="./Index">Return</a>
+    </div>
+    <div class="menu-button">
+        <a asp-page="./Exit">Exit</a>
+    </div>
+</div>

@@ -1,0 +1,52 @@
+﻿@page
+@using System.Web
+@model WebApp.Pages.MultiplayerGameplay
+
+<div class="gameplay-wrapper">
+    <div class="title">GamePlay</div>
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table table-bordered w-100 gameplay-grid">
+                @for (var i = 0; i < Model.GameState.BoardHeight; i++)
+                {
+                    <tr>
+                        @for (var j = 0; j < Model.GameState.BoardWidth; j++)
+                        {
+                            if (@Model.GameState.Player2Id != null) {
+                                <td onclick="redirectToPage(@j)" style="cursor: pointer;">@Model.GameState.Board[i][j]</td>
+                            }
+                        }
+                    </tr>
+                }
+            </table>
+        </div>
+    </div>
+    
+    @if (@Model.GameState.GameOver) {
+        <div class="game-over-message">Game over! Winner: @Model.GameState.GameWinner</div>
+    } else if (@Model.GameState.Player2Id == null) {
+        <div class="game-over-message">Waiting for other player</div>
+    } else {
+        <div class="player-turn">Player @Model.GameState.CurrentPlayer turn</div>
+    }
+    
+    <form method="post" class="action-buttons@(Model.GameState.GameOver ? " centered" : "")">
+        <input type="hidden" value="@Model.GameId" name="gameId"/>
+        <button class="return-to-menu" asp-page-handler="ReturnToMenu">
+            Return to Menu
+        </button>
+        @* 
+        @if (!Model.GameState.GameOver) {
+            <button class="save-button" asp-page-handler="Save">Save</button>
+        }
+        *@
+    </form>
+    
+</div>
+
+
+<script>
+    function redirectToPage(x){
+        window.location.href = "?id=@HttpUtility.UrlEncode(Model.GameId)&x=" + x;
+    }
+</script>

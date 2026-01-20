@@ -1,0 +1,24 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="main-menu text-center">
+    <div class="title">ConnectX</div>
+    <div class="menu-button">
+        <a asp-page="./GameMode">New Game</a>
+    </div>
+    <div class="menu-button">
+        <a asp-page="./LoadGame">Load Game</a>
+    </div>
+    <div class="menu-button">
+        <a asp-page="./MultiplayerMenu">Multiplayer</a>
+    </div>
+    <div class="menu-button">
+        <a asp-page="./Options">Options</a>
+    </div>
+    <div class="menu-button">
+        <a asp-page="./Exit">Exit</a>
+    </div>
+</div>

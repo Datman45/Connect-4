@@ -1,0 +1,24 @@
+﻿@page
+@model WebApp.Pages.AiDifficulty
+
+<div class="ai-difficulty-menu text-center">
+    <div class="title">Ai Difficulty Menu</div>
+    <div class="menu-button">
+        <a asp-page="./AiDifficulty" asp-page-handler="Easy">Easy</a>
+    </div>
+    <div class="menu-button">
+        <a asp-page="./AiDifficulty" asp-page-handler="Medium">Medium</a>
+    </div>
+    <div class="menu-button">
+        <a asp-page="./AiDifficulty" asp-page-handler="Hard"> Hard</a>
+    </div>
+    <div class="menu-button">
+        <a asp-page="./GameMode">Return</a>
+    </div>
+    <div class="menu-button">
+        <a asp-page="./Index">Return To Menu</a>
+    </div>
+    <div class="menu-button">
+        <a asp-page="./Exit">Exit</a>
+    </div>
+</div>

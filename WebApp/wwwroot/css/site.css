@@ -1,0 +1,229 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+
+.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
+  color: var(--bs-secondary-color);
+  text-align: end;
+}
+
+.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
+  text-align: start;
+}
+
+.main-content{
+    background-color: lightblue;
+}
+
+/* Full height screen for each page*/
+.main-content,
+.main-content .container,
+.main-content .container main,
+.main-content .main-menu,
+.main-content .new-game-form,
+.main-content .options-form,
+.main-content .game-mode-menu,
+.main-content .ai-difficulty-menu,
+.main-content .gameplay-wrapper,
+.main-content .multiplayer-menu{
+    height: 100vh;
+}
+
+/* Margins bottom for each title and buttons */
+.main-menu .menu-button,
+.main-menu .title,
+.form-group,
+.game-mode-menu .menu-button,
+.game-mode-menu .title,
+.new-game-form .title,
+.ai-difficulty-menu .menu-button,
+.ai-difficulty-menu .title,
+.gameplay-wrapper .title,
+.multiplayer-menu .title,
+.multiplayer-menu .menu-button,
+.multiplayer-menu button{
+    margin-bottom: 1em;
+}
+
+/* Margins bottom for each form label */
+.form-group label,
+.form-check label{
+    margin-bottom: 0.25em;
+}
+
+/* Centering each content */
+.main-menu,
+.new-game-form,
+.options-form,
+.game-mode-menu,
+.ai-difficulty-menu,
+.gameplay-wrapper,
+.multiplayer-menu{
+    margin-top: auto;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+/* titles sizes */
+.main-menu .title,
+.new-game-form .title,
+.options-form .title,
+.game-mode-menu .title,
+.ai-difficulty-menu .title,
+.gameplay-wrapper .title,
+.game-over-message,
+.multiplayer-menu .title,
+.player-turn{
+    font-size: 2em;
+}
+
+/* small buttons size*/
+.actions .save-button,
+.return-button,
+.new-game-form .btn,
+.new-game-form .return-button,
+.gameplay-wrapper .action-buttons .save-button,
+.gameplay-wrapper .action-buttons .return-to-menu{
+    width: 50px;
+    margin-top: 2rem;
+}
+
+/* move html element to the right */
+.actions .save-button,
+.new-game-form .btn,
+.load-game-wrapper .delete,
+.gameplay-wrapper .action-buttons .save-button{
+    float: right;
+}
+
+/* buttons style */
+.main-menu .menu-button a,
+.return-button,
+.actions .save-button,
+.game-mode-menu .menu-button a,
+.new-game-form .btn,
+.new-game-form .return-button,
+.ai-difficulty-menu .menu-button a,
+.load-game-wrapper .load,
+.load-game-wrapper .delete,
+.load-game-wrapper .connect,
+.gameplay-wrapper .action-buttons .return-to-menu,
+.gameplay-wrapper .action-buttons .save-button,
+.multiplayer-menu .menu-button a,
+.multiplayer-menu button{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: royalblue;
+    color: white;
+    border: solid 1px royalblue;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+/* big buttons sizes */
+.main-menu .menu-button a,
+.return-button,
+.actions .save-button,
+.game-mode-menu .menu-button a,
+.new-game-form .btn,
+.new-game-form .return-button,
+.ai-difficulty-menu .menu-button a,
+.gameplay-wrapper .action-buttons .save-button,
+.gameplay-wrapper .action-buttons .return-to-menu,
+.multiplayer-menu .menu-button a,
+.multiplayer-menu button{
+    height: 46px;
+    width: 120px;
+}
+
+/* buttons resizes */
+.load-game-wrapper .load,
+.load-game-wrapper .delete,
+.load-game-wrapper .connect{
+    height: 30px;
+    width: 80px;
+}
+
+/* delete button style */
+.load-game-wrapper .delete{
+    background-color: crimson;
+    border: solid 1px crimson;
+}
+
+/* width of forms */
+.new-game-form form,
+.new-game-form .col-md-4,
+.options-form form, 
+.options-form form{
+    width: 500px;
+}
+
+/* Game Board style */
+.gameplay-grid td {
+    text-align: center;
+    vertical-align: middle;
+    width: 150px;
+    height: 50px;
+    background: #e8ecf3;
+    border: 1px solid #b8c0cc;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.15s ease;
+}
+
+/* load game table style */
+.load-game-wrapper {
+    padding-top: 2rem;
+    height: auto;
+}
+
+.load-game-wrapper .load-game th{
+    background-color: steelblue;
+}
+
+.load-game-wrapper .load-game tr{
+    border: solid 2px steelblue;
+}
+
+.load-game-wrapper .load-game td{
+    border-right: solid 1px silver;
+}
+
+/* game over message style */
+.game-over-message,
+.player-turn{
+    text-align: center;
+}
+
+/* return to menu button centered after game over */
+.action-buttons.centered{
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.gameplay-wrapper .return-to-menu{
+    padding: 0;
+}
