@@ -7,7 +7,7 @@
 - Set ConsoleApp as the startup project.
 - Build and run the solution.
 
-## How to play
+## How to play (Console App)
 
 1. Run console ConsoleApp
 2. The Main Menu will appear.
@@ -44,7 +44,7 @@
 - The game ends in a draw
 2. After win or draw
 - You may return to the main menu by pressing "y"
-- Yuit the console app by pressing "n"
+- Quit the console app by pressing "n"
 
 ## Additional information
 1. In options menu 
