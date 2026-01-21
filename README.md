@@ -4,7 +4,7 @@
 ## How to install
 
 - Clone or download the project.
-- Open the solution in Visual Studio (or another C# IDE).
+- Open the solution in JetBrains Rider (or another C# IDE).
 - Set ConsoleApp as the startup project.
 - Build and run the solution.
 
