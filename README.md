@@ -102,9 +102,9 @@
 - Second player join the game by choosing available in find game
 - How to play
   - First player make a move
-  - Second player refresh the page
+  - Second player refresh a page
   - Second Player make a move
-  - First player make a move
+  - First player refresh a page
 
 ### Additional information
 - In options menu 
